@@ -1,0 +1,27 @@
+services:
+  web:
+    build: .
+    ports:
+      - "10019:80"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - keykrab-net
+
+  db:
+    image: mysql:5.7
+    platform: linux/x86_64
+    command: --sql-mode=""
+    environment:
+      MYSQL_DATABASE: keykrab
+      MYSQL_ROOT_PASSWORD: keykrab
+    ports:
+      - "10020:3306"
+    volumes:
+      - ./keykrab.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - keykrab-net
+
+networks:
+  keykrab-net:
+    driver: bridge
