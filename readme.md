@@ -3,7 +3,7 @@
 ![MySQL Version](https://img.shields.io/badge/MySQL-5.7-4479a1?style=flat&logo=mysql) 
 ![Docker](https://img.shields.io/badge/Docker-Destekliyor-2496ed?style=flat&logo=docker) 
 
-## TL;DR
+## Kişisel Notum
 
 Bitirmeyi en çok istediğim projelerden birisiydi, normalde ücretli olan ama kısa süreliğine ücretsiz dağıtılan oyunları paylaştığım bir projeydi, çok küçük bir kısmını tamamlayıp yarıda bırakmıştım o zamanlar.
 
@@ -107,8 +107,7 @@ docker-compose logs -f
 
 ## Proje Sahibi
 
-- Geliştiren: Burak M. ÜRER
-- Dönem: 2020
+Burak M. ÜRER
 
 ## Lisans
 
